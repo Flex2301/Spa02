@@ -1,0 +1,99 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* FONDO */
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #f7d9e3, #e8c7ff);
+}
+
+/* CONTENEDOR */
+.login-container{
+  width: 100%;
+  padding: 20px;
+}
+
+/* TARJETA */
+.login-card{
+  max-width: 350px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* TITULOS */
+.login-card h1{
+  color: #a05caa;
+  margin-bottom: 5px;
+}
+
+.subtitulo{
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+/* FORMULARIO */
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label{
+  text-align: left;
+  font-size: 13px;
+  color: #555;
+}
+
+input{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus{
+  border-color: #c084fc;
+  box-shadow: 0 0 0 2px #f3e8ff;
+}
+
+/* BOTON */
+button{
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #c084fc;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover{
+  background: #a855f7;
+}
+
+/* TEXTO EXTRA */
+.extra{
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.extra a{
+  color: #a855f7;
+  text-decoration: none;
+}

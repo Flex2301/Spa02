@@ -1,0 +1,159 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', Arial, sans-serif;
+}
+
+/* BODY */
+body{
+  background:#ffffff;
+  color:#333;
+  line-height:1.6;
+}
+
+/* HEADER */
+header{
+  background:#f6f2f4;
+  padding:20px;
+  text-align:center;
+  border-bottom:1px solid #e5e5e5;
+}
+
+header h1{
+  font-size:28px;
+  color:#7a5c6e;
+  margin-bottom:10px;
+}
+
+/* NAV */
+nav a{
+  margin:0 12px;
+  text-decoration:none;
+  color:#555;
+  font-weight:500;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#b48aa0;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+             url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1600');
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+  text-align:center;
+  padding:120px 20px;
+}
+
+.hero h2{
+  font-size:42px;
+  margin-bottom:15px;
+  font-weight:600;
+}
+
+.hero p{
+  font-size:18px;
+  max-width:600px;
+  margin:auto;
+}
+
+/* SECCIONES GENERALES */
+section{
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+h2{
+  text-align:center;
+  font-size:30px;
+  margin-bottom:40px;
+  color:#7a5c6e;
+}
+
+/* SERVICIOS */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+  gap:25px;
+}
+
+.section-item{
+  background:#faf7f9;
+  padding:25px;
+  border-radius:16px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+  transition:0.3s;
+  text-align:center;
+}
+
+.section-item:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.section-item h3{
+  color:#b48aa0;
+  margin-bottom:10px;
+}
+
+/* PRODUCTOS */
+.products ul{
+  list-style:none;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+  gap:15px;
+}
+
+.products li{
+  background:#f6f2f4;
+  padding:15px;
+  border-radius:12px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.products li:hover{
+  background:#eadde4;
+}
+
+/* BLOG */
+.blog .section-item{
+  text-align:left;
+}
+
+/* FOOTER */
+footer{
+  background:#7a5c6e;
+  color:#fff;
+  text-align:center;
+  padding:40px 20px;
+}
+
+footer h2{
+  color:#fff;
+  margin-bottom:15px;
+}
+
+footer p{
+  margin:5px 0;
+  font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  .hero h2{
+    font-size:30px;
+  }
+
+  nav a{
+    display:block;
+    margin:8px 0;
+  }
+}
